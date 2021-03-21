@@ -768,6 +768,7 @@ color: var(--accent_color);
 
 .photo {
     position: relative;
+    overflow: hidden;
 }
 
 .overley_card {
@@ -775,19 +776,20 @@ color: var(--accent_color);
     top: 0;
     left: 0;
     height: 100%;
-    padding: 63px 24px;
-    
+    width: 100%;
     font-family: var(--main_fond);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
-
+    padding: 63px 24px;
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
     background: rgba(33, 150, 243, 0.9);
-    overflow: scroll;
+    overflow: auto;
+   
 }
 
+/*======mod_window=====*/
