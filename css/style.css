@@ -773,10 +773,10 @@ color: var(--accent_color);
 
 .overley_card {
     position: absolute;
+    box-sizing: border-box;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
     font-family: var(--main_fond);
     font-style: normal;
     font-weight: 400;
@@ -788,8 +788,17 @@ color: var(--accent_color);
 
     color: #FFFFFF;
     background: rgba(33, 150, 243, 0.9);
-    overflow: auto;
-   
+    transform: translateY(101%);
+    opacity: 0;
+    transition: transform 250ms linear, opacity 0ms linear 250ms;
+    
+}
+
+.linc_cards:hover .overley_card
+.linc_cards:focus .overley_card {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 250ms linear, opacity 0ms linear 0ms;
 }
 
 /*======mod_window=====*/
