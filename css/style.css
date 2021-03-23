@@ -790,15 +790,12 @@ color: var(--accent_color);
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(101%);
     opacity: 0;
-    transition: transform 250ms linear, opacity 0ms linear 250ms;
     
 }
 
 .linc_cards:hover .overley_card
 .linc_cards:focus .overley_card {
     transform: translateY(0);
-    opacity: 1;
-    transition: transform 250ms linear, opacity 0ms linear 0ms;
 }
 
 /*======mod_window=====*/
