@@ -854,6 +854,7 @@ color: var(--accent_color);
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.2);
+    transition: transform 250ms linear, opacity 250ms linear;
 }
 
 .modal {
@@ -883,6 +884,7 @@ color: var(--accent_color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    
 }
 
 .is-hidden {
