@@ -199,6 +199,7 @@ color: var(--accent_color);
 .contakt_tel:hover,
 .contakt_tel:focus {
     color: var(--accent_color);
+    
 }
 
 .list {
@@ -211,21 +212,23 @@ color: var(--accent_color);
     width: 16px;
     height: 14px;
    fill: var(--text_basic);
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon_tell {
     width: 10px;
     height: 16px;
     fill: var(--text_basic);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts_item:hover .icon_mail {
-    fill: var(--accent_color)
+    fill: var(--accent_color);
 }
 
 
 .contacts_item:hover .icon_tell {
-    fill: var(--accent_color)
+    fill: var(--accent_color);
 }
 
 /*====Hero===*/
@@ -233,7 +236,6 @@ color: var(--accent_color);
 .container_hero {
     width: 1300px;
     height: 300px;
-    
 }
 
 .hero {
@@ -482,7 +484,7 @@ color: var(--accent_color);
 
 .link_social:hover .social_link_icon {
     fill: var(--first_color);
-    background: #2196F3;
+   
 }
 
 .social_link_icon {
@@ -535,14 +537,15 @@ color: var(--accent_color);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
     fill:  #AFB1B8;
-
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
+
 
 .link_box_client:not(:last-child){
     margin-right: 30px;
@@ -680,10 +683,6 @@ color: var(--accent_color);
     cursor: pointer;
 }
 
-.link_social_footer:hover .social_link_icon_footer {
-    fill: var(--first_color);
-    background: #2196F3;
-}
 
 .social_link_icon_footer {
     width: 20px;
@@ -712,7 +711,7 @@ color: var(--accent_color);
     margin-right: 8px;
 
     color: var(--title_text);
-    
+
 }
 
 .nav_portfolio:last-child {
@@ -733,7 +732,7 @@ color: var(--accent_color);
     background: var(--background_second);
     border-radius: 4px;
     border: 0px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .nav_portfolio :focus,
@@ -742,6 +741,13 @@ color: var(--accent_color);
     color: var(--first_color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.nav_portfolio :focus,
+.nav_portfolio :hover {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*=======cards_projects====*/

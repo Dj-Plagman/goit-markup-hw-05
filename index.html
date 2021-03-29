@@ -250,6 +250,7 @@
             </ul>
             </div>
         </section>
+        <!--Клиенты-->
         <section class="clients">
             <div class="container">
                 <h2 class="clients_h2">Постоянные клиенты</h2>
@@ -355,6 +356,7 @@
     </div>
 </div>   
     </footer>
+    <!--Modal_window-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
@@ -362,6 +364,24 @@
                     <use href="./img/sprite.svg#icon-vector"></use>
                 </svg>
             </button>
+            <form action="#" class="modal_form"> 
+                <label class="modal_form_field">
+                    Имя
+                    <input type="text" name="user_name" class="modal_form_imput"></input>
+                </label>
+                <label class="modal_form_field">
+                    Телефон
+                    <input type="tel" name="user_phone" class="modal_form_imput"></input>
+                </label>
+                <label class="modal_form_field">
+                    Почта
+                    <input type="mailto" name="user_mail" class="modal_form_imput"></input>
+                </label>
+                <label class="modal_form_field">
+                    Коментарий
+                    <textarea name="" class="modal_form_message"></textarea>
+                </label>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
