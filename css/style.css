@@ -159,7 +159,7 @@ color: var(--accent_color);
     display: flex;
     align-items: center;
     justify-content:space-between;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -181,7 +181,7 @@ color: var(--accent_color);
     display: flex;
     align-items: center;
     justify-content:space-between;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -732,6 +732,7 @@ color: var(--accent_color);
     background: var(--background_second);
     border-radius: 4px;
     border: 0px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -741,13 +742,6 @@ color: var(--accent_color);
     color: var(--first_color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.nav_portfolio :focus,
-.nav_portfolio :hover {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*=======cards_projects====*/
@@ -766,7 +760,6 @@ color: var(--accent_color);
     background: var(--first_color);
     /*border: 1px solid #EEEEEE;*/
     box-sizing: border-box;
-
 }
 
 .project_card:not(:nth-child(3n)) {
